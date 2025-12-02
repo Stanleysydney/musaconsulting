@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+body { 
+  @apply bg-gray-50 text-slate-900 dark:bg-dark-bg dark:text-slate-50 font-sans antialiased selection:bg-clinic-200 selection:text-clinic-900; 
+}
+
+/* Glassmorphism Utility */
+.glass-nav {
+  @apply bg-white/70 dark:bg-dark-bg/70 backdrop-blur-lg border-b border-gray-200 dark:border-dark-border;
+}
+
+.glass-card {
+  @apply bg-white dark:bg-dark-card border border-gray-100 dark:border-dark-border shadow-xl;
+}
