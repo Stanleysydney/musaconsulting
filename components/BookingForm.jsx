@@ -162,7 +162,7 @@ export function BookingForm() {
         <div className="mb-3 flex items-center justify-between gap-3">
           <label className="text-sm font-bold text-ink-950">Service</label>
           <span className="text-xs font-semibold text-ink-500">
-            {selectedService.duration} · {selectedService.price}
+            {selectedService.duration} - {selectedService.price}
           </span>
         </div>
         <div className="grid gap-3 sm:grid-cols-2">

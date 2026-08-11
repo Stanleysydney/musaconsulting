@@ -93,7 +93,7 @@ export default function HomePage() {
               <h2 className="mt-3 text-3xl font-bold tracking-normal text-ink-950 sm:text-4xl">Care options built for scheduled clinical work.</h2>
             </div>
             <p className="max-w-3xl text-base leading-7 text-ink-500">
-              The site now avoids vague claims and routes visitors into specific care paths. Each request is validated server-side and can be stored in MongoDB when credentials are configured.
+              Patients choose the kind of visit they need up front, which keeps preparation focused and helps the care team respond with the right next step.
             </p>
           </div>
 
@@ -193,14 +193,14 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_1.2fr] lg:px-8">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.14em] text-clinic-100">Security</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-normal sm:text-4xl">Built to reduce obvious attack surface.</h2>
+            <h2 className="mt-3 text-3xl font-bold tracking-normal sm:text-4xl">Private by design.</h2>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
-              ["Validated forms", "All intake, contact, login, and registration payloads are parsed with strict schemas."],
-              ["Safer sessions", "Portal access uses httpOnly cookies instead of localStorage tokens."],
-              ["Origin checks", "Mutating API routes reject unexpected origins and unsupported content types."],
-              ["No raw errors", "Users see stable messages while server logs keep operational detail."]
+              ["Focused intake", "The forms ask for only the details needed to prepare a consultation."],
+              ["Protected access", "Patient portal sessions are short-lived and handled through secure cookies."],
+              ["Request screening", "Unexpected or malformed requests are rejected before they reach care records."],
+              ["Clear responses", "Patients receive stable confirmation references for follow-up."]
             ].map(([title, text]) => (
               <article key={title} className="rounded-lg border border-white/10 bg-white/6 p-5">
                 <LockKeyhole aria-hidden="true" className="text-clinic-100" size={22} />
@@ -247,7 +247,7 @@ export default function HomePage() {
             <p className="text-sm font-bold uppercase tracking-[0.14em] text-clinic-700">Contact</p>
             <h2 className="mt-3 text-3xl font-bold tracking-normal text-ink-950 sm:text-4xl">Reach the care team.</h2>
             <p className="mt-5 text-base leading-7 text-ink-500">
-              Use booking for appointments and contact for records, billing, or general coordination. Messages are rate-limited, validated, and stored only when the database is configured.
+              Use booking for appointments and contact for records, billing, or general coordination. A care-team reference is returned after a message is accepted.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="/book" className={buttonStyles({ size: "lg" })}>

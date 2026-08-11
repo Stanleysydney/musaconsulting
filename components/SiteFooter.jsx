@@ -50,7 +50,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-white/50">
-        © {new Date().getFullYear()} MusaConsulting. All rights reserved.
+        (c) {new Date().getFullYear()} MusaConsulting. All rights reserved.
       </div>
     </footer>
   );

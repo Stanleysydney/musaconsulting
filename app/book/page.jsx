@@ -32,7 +32,7 @@ export default function BookPage() {
                 <ShieldCheck aria-hidden="true" size={18} />
                 Privacy-first intake
               </div>
-              The API validates input, rate-limits requests, and avoids returning raw server errors.
+              Intake is reviewed with a privacy-first workflow before the appointment is confirmed.
             </div>
           </div>
 
